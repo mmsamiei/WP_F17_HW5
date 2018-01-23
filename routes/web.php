@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/download', function () {
+    return view('download');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
