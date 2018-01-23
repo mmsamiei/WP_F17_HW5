@@ -20,7 +20,6 @@ class CreateCommentTable extends Migration
             $table->string('author',255);
             $table->text('comment');
             $table->tinyInteger('rate');
-            $table->timestamps();
         });
     }
 
