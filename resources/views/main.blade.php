@@ -6,18 +6,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="{{ URL::asset('/bower_components/bootstrap/dist/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ URL::asset('/bower_components/owl.carousel/dist/assets/owl.carousel.min.css') }}"/>
+    <link rel="stylesheet" href="{{ URL::asset('/assets/main.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css') }}"/>
+    <link rel="stylesheet" href="{{ URL::asset('/bower_components/owl.carousel/dist/assets/owl.theme.green.min.css') }}"/>
 
-    {{--<link href="../assets/main.css" rel="stylesheet">--}}
-    <link rel="stylesheet" href="{{ URL::asset('/css/main.css') }}">
 
-    <link rel="stylesheet" href="../assets/main.css">
-    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.theme.green.min.css">
     <script src="../bower_components/jquery/dist/jquery.min.js" ></script>
     <script type="text/javascript" src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+
 
 </head>
 <body>
@@ -159,7 +158,7 @@
                                     <i class="fa fa-search-plus white-f"></i>
                                 </button>
                             </span>
-                    <input id="search_input" type="text" class="form-control ver-child" placeholder="...جستجوی فیلم، سریال، بازیگر، کارگردان و " style=" text-align: right;direction: rtl; height: 100%; line-height: 2px">
+                    <input id="search_input" type="text" class="form-control ver-child" placeholder="...جستجوی فیلم، سریال، بازیگر، کارگردان و " style=" height: 80px;text-align: right;direction: rtl; line-height: 2px">
 
                 </div>
                 <button class="btn btn-default col-lg-3 offset-lg-3 btn btn-warning" >
@@ -222,7 +221,7 @@
     <section style="text-align: right;height: auto" class="hero-style">
         <div>
             <div class="container" style="width: 970px; position: relative">
-                <img src="http://iranfilm.co/wp-content/uploads/2018/01/image_preview5454.png" style="width: 100%">
+                <img src="http://www.iranfilm.co/wp-content/uploads/2018/01/image_preview5454.png" style="width: 100%">
                 <div style="position: absolute; top: 10%">
                     <h3>بهترین بازیگران و فیلم‌های سال کدامند؟</h3>
                     <small style="display: block; ">هفتاد و پنجمین جوایز گلدن‌گلوب</small>

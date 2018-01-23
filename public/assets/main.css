@@ -261,7 +261,7 @@ a, a:visited{
 }
 
 #main_slider{
-    background-image: url('../../F96-HW4/assets/images/main/startwars.jpg');
+    background-image: url('../assets/images/main/startwars.jpg');
     background-repeat:no-repeat;
     background-size:100% auto;
     height:300px;
