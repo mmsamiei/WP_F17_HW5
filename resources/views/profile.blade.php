@@ -129,7 +129,7 @@
 </div>
 <div id="main_div" class="container" style="height: auto">
     <div class="movie-tabs-div" >
-        <ul>
+        <ul >
             <li class="movie-tabs-item active_item">
                 <a id="download_tab">
                     تنظیمات
