@@ -30,3 +30,4 @@ Route::get('/download', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
