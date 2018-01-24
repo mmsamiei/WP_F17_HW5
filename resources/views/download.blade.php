@@ -1,14 +1,14 @@
 <html dir="rtl" lang="fa">
 <head>
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="../bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet">-->
-    <link href="../assets/download.css" rel="stylesheet" type="text/css">
+    <link href="/assets/download.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css">
 
-    <script src="../bower_components/jquery/dist/jquery.min.js" ></script>
-    <script type="text/javascript" src="../js/download.js"></script>
-    <script type="text/javascript" src="../bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js" ></script>
+    <script type="text/javascript" src="/js/download.js"></script>
+    <script type="text/javascript" src="/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
 
 
 
@@ -26,8 +26,8 @@
 <div id="top_header">
     <div id="top_header_container">
         <div class="circle_avatar">
-            <a href="../src/profile.html">
-                <img class="circle_avatar_img " src="../assets/images/download/avatar.jpg">
+            <a href="/src/profile.html">
+                <img class="circle_avatar_img " src="/assets/images/download/avatar.jpg">
             </a>
         </div>
         <div id="notification_div">
@@ -351,10 +351,10 @@
                     </div>
                     <div id="left_items">
                         <span>
-                            <img src="../assets/images/list.png"></img>
+                            <img src="/assets/images/list.png"></img>
                         </span>
                         <span>
-                            <img src="../assets/images/grid.png"></img>
+                            <img src="/assets/images/grid.png"></img>
                         </span>
                         <span class="question_mark_span">?</span>
                         <span class="help_span">راهنما</span>
@@ -470,7 +470,7 @@
                             <div class="download_version_info">
                                 <span class="black_color"><i class="fa fa-flag-o" aria-hidden="true"></i></span>
                                 <span class="beaublue_color music_quality"> 128 kbps</span>
-                                <span class="wave_span"><img src="../assets/images/download/wave.png"></span>
+                                <span class="wave_span"><img src="/assets/images/download/wave.png"></span>
                             </div>
                             <div class="download_version_time">
                                 <span class="white_color flex_center_item">01:06:33</span>
@@ -503,7 +503,7 @@
                             <div class="download_version_info">
                                 <span class="black_color"><i class="fa fa-flag-o" aria-hidden="true"></i></span>
                                 <span class="beaublue_color music_quality"> 128 kbps</span>
-                                <span class="wave_span"><img src="../assets/images/download/wave.png"></span>
+                                <span class="wave_span"><img src="/assets/images/download/wave.png"></span>
                             </div>
                             <div class="download_version_time">
                                 <span class="white_color flex_center_item">01:06:33</span>
@@ -539,7 +539,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2" style="max-width: 200px;padding: 20px">
-                    <img style="border-radius:50%;height: auto;width: 100%" src="../assets/images/download/avatar.jpg">
+                    <img style="border-radius:50%;height: auto;width: 100%" src="/assets/images/download/avatar.jpg">
                 </div>
                 <div class="col-lg-6">
                     <div style="border: 1px solid darkgray;border-radius: 5px; padding-right: 0px;padding-left: 0px;padding-top: 10px">
@@ -660,7 +660,7 @@
                 </div>
             </div>
             <div class="col-lg-2" style="max-width: 200px;padding: 20px">
-                <img style="border-radius:50%;height: auto;width: 100%" src="../assets/images/download/avatar.jpg">
+                <img style="border-radius:50%;height: auto;width: 100%" src="/assets/images/download/avatar.jpg">
             </div>
             <div class="col-lg-6 border border-success rounded mt-2">
                 <div class="d-flex m-2">
@@ -734,7 +734,7 @@
                 </div>
             </div>
             <div class="col-lg-2" style="max-width: 200px;padding: 20px">
-                <img style="border-radius:50%;height: auto;width: 100%" src="../assets/images/download/avatar-iman.jpg">
+                <img style="border-radius:50%;height: auto;width: 100%" src="/assets/images/download/avatar-iman.jpg">
             </div>
             <div class="col-lg-6 border border-success rounded mt-2">
                 <div class="d-flex m-2">
@@ -821,16 +821,16 @@
                         <div id="social_wrap">
                             <div id="image_wrapper">
                                 <a href="https://plus.google.com/+mohmahsamiei">
-                                    <img class="icon_image" src="../assets/images/main/Google_plus.svg">
+                                    <img class="icon_image" src="/assets/images/main/Google_plus.svg">
                                 </a>
                                 <a href="https://www.instagram.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/instagram.svg">
+                                    <img class="icon_image" src="/assets/images/main/instagram.svg">
                                 </a>
                                 <a href="https://telegram.me/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/telegram.svg">
+                                    <img class="icon_image" src="/assets/images/main/telegram.svg">
                                 </a>
                                 <a href="https://twitter.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/twitter.svg">
+                                    <img class="icon_image" src="/assets/images/main/twitter.svg">
                                 </a>
                             </div>
                         </div>

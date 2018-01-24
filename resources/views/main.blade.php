@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="{{ URL::asset('/bower_components/owl.carousel/dist/assets/owl.theme.green.min.css') }}"/>
 
 
-    <script src="../bower_components/jquery/dist/jquery.min.js" ></script>
-    <script type="text/javascript" src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js" ></script>
+    <script type="text/javascript" src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 
 
 </head>
@@ -26,7 +26,7 @@
         <button id="signup_signin_btn">ورود/عضویت</button>
         <div id="gas_station_div">
             <a href="">
-                <img id="gas_station_img" src="../assets/images/gas-station.svg">
+                <img id="gas_station_img" src="/assets/images/gas-station.svg">
             </a>
         </div>
         <form id="search_form">
@@ -202,7 +202,7 @@
                 </h3>
             </div>
             <div class="carousel_wrapper ">
-                <img class="angle-point-to-right" src="../assets/images/main/angle-pointing-to-right.svg">
+                <img class="angle-point-to-right" src="/assets/images/main/angle-pointing-to-right.svg">
                 <div class="owl-carousel" id="owl-carousel-father-div">
                     <!--<div class="item"> <img src="../media/main/slider/frozen.jpg" alt="Owl Image"> </div>-->
                     <!--<div class="item"> <img src="../media/main/slider/frozen.jpg" alt="Owl Image"> </div>-->
@@ -213,7 +213,7 @@
                     <!--<div class="item"> <img src="../media/main/slider/grandpa.jpg" alt="Owl Image"> </div>-->
                     <!--<div class="item"> <img src="../media/main/slider/grandpa.jpg" alt="Owl Image"> </div>-->
                 </div>
-                <img class="angle-point-to-left" src="../assets/images/main/angle-pointing-to-left.svg">
+                <img class="angle-point-to-left" src="/assets/images/main/angle-pointing-to-left.svg">
             </div>
         </div>
     </div>
@@ -242,11 +242,11 @@
                 </h3>
             </div>
             <div class="carousel_wrapper ">
-                <img class="angle-point-to-right" src="../assets/images/main/angle-pointing-to-right.svg">
+                <img class="angle-point-to-right" src="/assets/images/main/angle-pointing-to-right.svg">
                 <div class="owl-carousel owl-theme" id="owl-carousel-hotfilms">
                     <!--<div class="item"> <img src="../media/main/slider/frozen.jpg" alt="Owl Image"> </div>-->
                 </div>
-                <img class="angle-point-to-left" src="../assets/images/main/angle-pointing-to-left.svg">
+                <img class="angle-point-to-left" src="/assets/images/main/angle-pointing-to-left.svg">
             </div>
         </div>
     </section>
@@ -297,16 +297,16 @@
                         <div id="social_wrap">
                             <div id="image_wrapper">
                                 <a href="https://plus.google.com/+mohmahsamiei">
-                                    <img class="icon_image" src="../assets/images/main/Google_plus.svg">
+                                    <img class="icon_image" src="/assets/images/main/Google_plus.svg">
                                 </a>
                                 <a href="https://www.instagram.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/instagram.svg">
+                                    <img class="icon_image" src="/assets/images/main/instagram.svg">
                                 </a>
                                 <a href="https://telegram.me/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/telegram.svg">
+                                    <img class="icon_image" src="/assets/images/main/telegram.svg">
                                 </a>
                                 <a href="https://twitter.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/twitter.svg">
+                                    <img class="icon_image" src="/assets/images/main/twitter.svg">
                                 </a>
                             </div>
                         </div>

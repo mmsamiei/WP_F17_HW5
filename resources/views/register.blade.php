@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
 <head>
-    <link href="../assets/register.css" rel="stylesheet" type="text/css">
+    <link href="/assets/register.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>ﺻﻔﺤﻪ عضویت</title>
@@ -43,7 +43,7 @@
                     <input type="text" name="entered_captcha" placeholder="کد امنیتی">
                     <a href="" class="fa fa-refresh" aria-hidden="true" id="captcha_refresh_icon"></a>
                 </div>
-                <img id="captcha_sample_img" src="../assets/images/sample_captcha.png">
+                <img id="captcha_sample_img" src="/assets/images/sample_captcha.png">
             </div>
             <div id="accept_rules_div">
                 <input type="checkbox" name="remember_me" value="yes">

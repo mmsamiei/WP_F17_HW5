@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/global.css" rel="stylesheet">
-    <link href="../assets/profile.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/global.css" rel="stylesheet">
+    <link href="/assets/profile.css" rel="stylesheet">
 
 </head>
 <body>
@@ -15,7 +15,7 @@
         <button id="signup_signin_btn">ورود/عضویت</button>
         <div id="gas_station_div">
             <a href="">
-                <img id="gas_station_img" src="../assets/images/gas-station.svg">
+                <img id="gas_station_img" src="/assets/images/gas-station.svg">
             </a>
         </div>
         <form id="search_form">
@@ -249,16 +249,16 @@
                         <div id="social_wrap">
                             <div id="image_wrapper">
                                 <a href="https://plus.google.com/+mohmahsamiei">
-                                    <img class="icon_image" src="../assets/images/main/Google_plus.svg">
+                                    <img class="icon_image" src="/assets/images/main/Google_plus.svg">
                                 </a>
                                 <a href="https://www.instagram.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/instagram.svg">
+                                    <img class="icon_image" src="/assets/images/main/instagram.svg">
                                 </a>
                                 <a href="https://telegram.me/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/telegram.svg">
+                                    <img class="icon_image" src="/assets/images/main/telegram.svg">
                                 </a>
                                 <a href="https://twitter.com/mmsamiei">
-                                    <img class="icon_image" src="../assets/images/main/twitter.svg">
+                                    <img class="icon_image" src="/assets/images/main/twitter.svg">
                                 </a>
                             </div>
                         </div>

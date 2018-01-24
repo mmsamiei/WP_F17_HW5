@@ -31,3 +31,27 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+
+Route::get('/movies/recent/{number}', function () {
+    return view('register');
+})->where('number','[0-9]+');
+
+Route::get('/movies/{id}/details', function () {
+    return view('register');
+})->where('id','[0-9]+');
+
+Route::get('/movies/{id}/comments', function () {
+    return view('register');
+})->where('id','[0-9]+');
+
+Route::post('/movies/{id}/comments', function () {
+    return view('register');
+})->where('id','[0-9]+');
+
+Route::get('/search', function () {
+    return \Illuminate\Support\Facades\Input::get("q");
+});
+
+Route::post('/submit', function () {
+    return view('register');
+});
