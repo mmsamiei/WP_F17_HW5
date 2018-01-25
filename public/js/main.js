@@ -89,7 +89,8 @@ let hotfilms = [
 
 function click_image(object){
     console.log(object);
-    var newWindow = window.open('./download.html?id='+object["imdbID"]);
+    // var newWindow = window.open('./download.html?id='+object.id);
+    var newWindow = window.open(+object.id);
 }
 
 function mouse_over_image() {
@@ -123,7 +124,7 @@ $(document).ready(function(){
                      .owlCarousel('update');
 
                  div_of_img.addEventListener("click", function () {
-                     click_image(object);
+                     click_image(object2[0]);
                  });
                  div_of_img.onmouseover = mouse_over_image;
 
