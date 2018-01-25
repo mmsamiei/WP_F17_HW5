@@ -38,9 +38,7 @@ Route::get('/movies/{id}/details', 'MoviesController@get_details')->where('id','
 
 Route::get('/movies/{id}/comments','CommentsController@get_comments' )->where('id','[0-9]+');
 
-Route::post('/movies/{id}/comments', function () {
-    return view('register');
-})->where('id','[0-9]+');
+Route::post('/movies/{id}/comments', 'CommentsController@insert_comment')->where('id','[0-9]+');
 
 Route::get('/search', function () {
     return \Illuminate\Support\Facades\Input::get("q");
