@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\DB;
 
 class MoviesController extends Controller
 {
-    public function get_recent ($number){
-        $movies = DB::table('movies')->orderBy('created_at','DESC')->select('id','title','original_title','year')->take(10)->get();
+    public function get_recent ($number=10){
+        $movies = DB::table('movies')->orderBy('created_at','DESC')->select('id','title','original_title','year')->take($number)->get();
         return $movies;
     }
 }
