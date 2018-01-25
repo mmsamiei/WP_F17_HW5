@@ -257,9 +257,9 @@
         </ul>
     </div>
     <div class="content download_tab_content">
-        <div class="download_score">
+        <div class="download_score row">
             <div class="rating_slider_div">
-                <div class="range_item">
+                <div class="range_item m-1">
                     <label>
                         ارزش دانلود ۹ از ۱۰
                     </label>
@@ -560,9 +560,9 @@
 
 
 
-        <div class="download_score">
+        <div class="download_score row">
             <div class="rating_slider_div">
-                <div class="range_item">
+                <div class="range_item m-1">
                     <label>
                         ارزش دانلود ۹ از ۱۰
                     </label>
