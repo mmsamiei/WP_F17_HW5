@@ -188,6 +188,11 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
     // omdbapi_key = "9d16e1f7";
     // url for omdbapi
     // url = "http://www.omdbapi.com/?i="+imdbid+"&apikey="+omdbapi_key+"&plot=full";
