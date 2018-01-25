@@ -78,7 +78,6 @@ $(document).ready(function(){
 
 
     let film_id = getParameterByName('id');
-    alert(film_id);
 
 
     let tabs_a = $('.movie-tabs-div').find('li');
@@ -95,7 +94,6 @@ $(document).ready(function(){
 
 
     let my_api_url = "http://localhost:8000/movies/"+film_id+"/details";
-    alert(my_api_url);
 
     $.get(my_api_url).done(function (object){
 
