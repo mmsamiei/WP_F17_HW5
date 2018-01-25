@@ -25,6 +25,10 @@ class CreateMoviesTable extends Migration
             $table->string('country',255);
             $table->text('description');
             $table->string('director',255);
+            $table->string('cover',255);
+            $table->string('writer',255);
+            $table->string('stars',255);
+            $table->string('category',255);
         });
     }
 

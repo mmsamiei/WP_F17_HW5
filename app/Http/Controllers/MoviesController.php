@@ -19,7 +19,7 @@ class MoviesController extends Controller
 
     public function search (){
         $query =  \Illuminate\Support\Facades\Input::get("q");
-        $movies = DB::table('movies')->where('title','LIKE','%'.$query.'%')->orwhere('original_title','LIKE','%'.$query.'%')->orwhere('description','LIKE','%'.$query.'%')->get();
+        $movies = DB::table('movies')->where('title','LIKE','%'.$query.'%')->orwhere('original_title','LIKE','%'.$query.'%')->orwhere('description','LIKE','%'.$query.'%')->select('id','title')->get();
         return $movies;
     }
 }
