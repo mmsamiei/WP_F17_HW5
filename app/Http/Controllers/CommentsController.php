@@ -14,7 +14,11 @@ class CommentsController extends Controller
         return $comments;
     }
 
-    public function insert_comment ($id){
+    public function insert_comment (Request $request){
+
+        $comment_text = $request->input('comment_text');
+        
+
         $id = DB::table('comments')->insertGetId(
             ['author' => Input::get('author'), 'comment' => Input::get('comment')]);
         return $id;
