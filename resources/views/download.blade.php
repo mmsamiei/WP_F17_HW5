@@ -756,6 +756,86 @@
         </div>
 
 
+        @php
+            $id = $_GET["id"];
+            $comments = \App\Http\Controllers\CommentsController::get_comments($id);
+        @endphp
+
+        @foreach ($comments as $comment)
+            <div class="col-lg-12 row border border-dark m-2 p-1 rounded">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-row justify-content-around align-items-center m-2">
+                        <div class="w-2">
+                            <span>کارگردانی</span>
+                        </div>
+                        <div class="w-2">
+                            <span>۴</span>
+                            <span> از </span>
+                            <span>۱۰</span>
+                        </div>
+                        <div class="w-6">
+                            <div style="height: 10px;position: relative;direction: ltr">
+                                <div class="w-10" style="background: gainsboro;height: 100%;position: absolute"></div>
+                                <div class="w-4" style="background: deepskyblue;height: 100%;position: absolute"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center m-2">
+                        <div class="w-2">
+                            <span>بازیگری</span>
+                        </div>
+                        <div class="w-2">
+                            <span>۰</span>
+                            <span> از </span>
+                            <span>۱۰</span>
+                        </div>
+                        <div class="w-6">
+                            <div style="height: 10px;position: relative;direction: ltr">
+                                <div class="w-10" style="background: gainsboro;height: 100%;position: absolute"></div>
+                                <div class="w-0" style="background: deepskyblue;height: 100%;position: absolute"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around align-items-center m-2">
+                        <div class="w-2">
+                            <span>فیلمنامه</span>
+                        </div>
+                        <div class="w-2">
+                            <span>۸</span>
+                            <span> از </span>
+                            <span>۱۰</span>
+                        </div>
+                        <div class="w-6">
+                            <div style="height: 10px;position: relative;direction: ltr">
+                                <div class="w-10" style="background: gainsboro;height: 100%;position: absolute"></div>
+                                <div class="w-8" style="background: deepskyblue;height: 100%;position: absolute"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="max-width: 200px;padding: 20px">
+                    <img style="border-radius:50%;height: auto;width: 100%" src="/assets/images/download/avatar-iman.jpg">
+                </div>
+                <div class="col-lg-6 border border-success rounded mt-2">
+                    <div class="d-flex m-2">
+                        <span class="ml-1">۱۲ بهمن ۱۳۵۷</span>
+                        <span class="ml-auto">۰۹:۳۳:۰۰</span>
+                        <span class="ml-1">فیلم را پیشنهاد نمیکنم</span>
+                        <span class=""><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="m-2">
+                        {{ $comment->comment }}
+                    </div>
+                    <div class="m-2">
+                        <span class="m-1"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                        <span class="m-1" style="font-size: large">۲۷</span>
+                        <span class="m-1"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></span>
+                        <span class="m-1" style="font-size: large">۳۲</span>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+
 
 
     </div>
