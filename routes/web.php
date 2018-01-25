@@ -40,9 +40,7 @@ Route::get('/movies/{id}/comments','CommentsController@get_comments' )->where('i
 
 Route::post('/movies/{id}/comments', 'CommentsController@insert_comment')->where('id','[0-9]+');
 
-Route::get('/search', function () {
-    return \Illuminate\Support\Facades\Input::get("q");
-});
+Route::get('/search', 'MoviesController@search');
 
 Route::post('/submit', function () {
     return view('register');
