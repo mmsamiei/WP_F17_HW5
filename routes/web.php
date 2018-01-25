@@ -34,9 +34,7 @@ Route::get('/profile', function () {
 
 Route::get('/movies/recent/{number?}', 'MoviesController@get_recent')->where('number','[0-9]+');
 
-Route::get('/movies/{id}/details', function () {
-    return view('register');
-})->where('id','[0-9]+');
+Route::get('/movies/{id}/details', 'MoviesController@get_details')->where('id','[0-9]+');
 
 Route::get('/movies/{id}/comments', function () {
     return view('register');
