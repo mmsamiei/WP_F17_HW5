@@ -90,7 +90,7 @@ let hotfilms = [
 function click_image(object){
     console.log(object);
     // var newWindow = window.open('./download.html?id='+object.id);
-    var newWindow = window.open(+object.id);
+    window.location.href = '/download?id='+object.id
 }
 
 function mouse_over_image() {
@@ -105,12 +105,10 @@ $(document).ready(function(){
     //
     // // url for myapi
      let my_api_url = "http://localhost:8000/movies/recent/10";
-     alert("Hello");
      $.get(my_api_url).done(function (object){
          for (let i=0;i<object.length ;i++){
             let my_id = object[i].id;
             let temp_api_url = "http://localhost:8000/movies/"+my_id+"/details";
-            alert(temp_api_url);
              $.get(temp_api_url).done(function (object2){
                  let addr_cover = "/posters/" + object2[0].cover;
 
