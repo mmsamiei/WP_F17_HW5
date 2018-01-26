@@ -224,43 +224,71 @@ $(document).ready(function(){
 
 
 
-    for (let i=0;i<hotfilms.length ;i++){
+    // for (let i=0;i<hotfilms.length ;i++){
+    //
+    //     //url for theimdb api
+    //     // url = "http://www.theimdbapi.org/api/find/movie?title="+films[i].title+"&year="+films[i].year;
+    //
+    //     omdbapi_key = "9d16e1f7";
+    //     // url for omdbapi
+    //     url = "http://www.omdbapi.com/?t="+hotfilms[i].title+"&apikey="+omdbapi_key+"&plot=full";
+    //
+    //     $.get(url).done(function (object){
+    //
+    //         let new_img = document.createElement("img");
+    //         new_img.setAttribute("src",object["Poster"]);
+    //
+    //         let div_of_img = document.createElement("div");
+    //         div_of_img.className = "item";
+    //         div_of_img.appendChild(new_img);
+    //         $('#owl-carousel-hotfilms')
+    //             .owlCarousel('add', div_of_img)
+    //             .owlCarousel('update');
+    //
+    //         div_of_img.addEventListener("click", function () {
+    //             click_image(object);
+    //         });
+    //         div_of_img.onmouseover = mouse_over_image;
+    //
+    //         // let content = '<div class="item"> <img src='+object["Poster"]+'alt="Owl Image"> </div>';
+    //         // $('#owl-carousel-father-div')
+    //         //     .owlCarousel('add', content)
+    //         //     .owlCarousel('update')
+    //
+    //     });
+    //
+    // }
 
-        //url for theimdb api
-        // url = "http://www.theimdbapi.org/api/find/movie?title="+films[i].title+"&year="+films[i].year;
+    $.get(my_api_url).done(function (object){
+        for (let i=0;i<object.length ;i++){
+            let my_id = object[i].id;
+            let temp_api_url = "http://localhost:8000/movies/"+my_id+"/details";
+            $.get(temp_api_url).done(function (object2){
+                let addr_cover = "/posters/" + object2[0].cover;
+                let new_img = document.createElement("img");
+                new_img.setAttribute("src",addr_cover);
 
-        omdbapi_key = "9d16e1f7";
-        // url for omdbapi
-        url = "http://www.omdbapi.com/?t="+hotfilms[i].title+"&apikey="+omdbapi_key+"&plot=full";
+                let div_of_img = document.createElement("div");
+                div_of_img.className = "item";
+                div_of_img.appendChild(new_img);
+                $('#owl-carousel-hotfilms')
+                    .owlCarousel('add', div_of_img)
+                    .owlCarousel('update');
 
-        $.get(url).done(function (object){
-            let new_img = document.createElement("img");
-            new_img.setAttribute("src",object["Poster"]);
-            let div_of_img = document.createElement("div");
-            div_of_img.className = "item";
-            div_of_img.appendChild(new_img);
-            $('#owl-carousel-hotfilms')
-                .owlCarousel('add', div_of_img)
-                .owlCarousel('update');
+                div_of_img.addEventListener("click", function () {
+                    click_image(object2[0]);
+                });
+                div_of_img.onmouseover = mouse_over_image;
 
 
 
-
-
-
-            div_of_img.addEventListener("click", function () {
-                click_image(object);
             });
-            div_of_img.onmouseover = mouse_over_image;
+        }
+    });
 
-            // let content = '<div class="item"> <img src='+object["Poster"]+'alt="Owl Image"> </div>';
-            // $('#owl-carousel-father-div')
-            //     .owlCarousel('add', content)
-            //     .owlCarousel('update')
 
-        });
 
-    }
+
 
 
 
