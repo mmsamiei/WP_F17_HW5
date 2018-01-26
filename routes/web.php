@@ -42,6 +42,8 @@ Route::get('/movies/{id}/comments',[
 
 Route::post('/movies/{id}/comments', 'CommentsController@insert_comment')->where('id','[0-9]+');
 
+
+
 Route::get('/search', 'MoviesController@search');
 
 Route::post('/submit', function () {

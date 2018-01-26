@@ -21,9 +21,14 @@ class CommentsController extends Controller
         $comment_text = $request->input('comment_text');
 
 
+
+        date_default_timezone_set('Asia/Tehran');
+        $date = date('Y:m:d h:i:s', time());
+
         $id = DB::table('comments')->insertGetId(
-            ['author' => Input::get('author'), 'comment' => Input::get('comment')]);
-        return $id;
+            ['author' => 'guest', 'comment' => Input::get('comment_text'),'movie_id' => Input::get('movie_id'), 'created_at' => $date ,'rate'=>3]);
+
+        return redirect('/download?id='.Input::get('movie_id'));
     }
 
 }

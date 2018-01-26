@@ -519,15 +519,24 @@
         محتوای مخصوص زیرنویس
     </div>
 
+
+    @php
+        $id = $_GET["id"];
+        $comments = \App\Http\Controllers\CommentsController::get_comments($id);
+    @endphp
+
     <div class="content comments_tab_content container">
 
 
         <div class="container">
-            <form class="row col-lg-12">
+            <form method="post" action="/movies/1/comments" class="row col-lg-12">
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <input type="hidden" name="movie_id" value="{{$id}}">
+
                 <div class="col-lg-4">
                     <div class="form-control-range row">
                         <label class="col-lg-4">کارگردانی</label>
-                        <input class="col-lg-8" dir="ltr" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="7"/>
+                        <input name="director_rate" class="col-lg-8" dir="ltr" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="7"/>
                     </div>
                     <div class="form-control-range row">
                         <label class="col-lg-4">بازیگری</label>
@@ -543,7 +552,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div style="border: 1px solid darkgray;border-radius: 5px; padding-right: 0px;padding-left: 0px;padding-top: 10px">
-                        <textarea class="col-lg-12 border-0" rows="6" style="outline: none;;resize: none;padding-top: 10px"></textarea>
+                        <textarea class="col-lg-12 border-0" name="comment_text" rows="6" style="outline: none;;resize: none;padding-top: 10px"></textarea>
                         <div class="col-lg-12">
                             <input type="radio" name="idea">
                             <label>نظری ندارم</label>
@@ -756,10 +765,7 @@
         </div>
 
 
-        @php
-            $id = $_GET["id"];
-            $comments = \App\Http\Controllers\CommentsController::get_comments($id);
-        @endphp
+
 
         @foreach ($comments as $comment)
             <div class="col-lg-12 row border border-dark m-2 p-1 rounded">
