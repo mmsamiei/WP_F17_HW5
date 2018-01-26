@@ -221,7 +221,8 @@
     <section style="text-align: right;height: auto" class="hero-style">
         <div>
             <div class="container" style="width: 970px; position: relative">
-                <img src="http://www.iranfilm.co/wp-content/uploads/2018/01/image_preview5454.png" style="width: 100%">
+                {{--<img src="http://www.iranfilm.co/wp-content/uploads/2018/01/image_preview5454.png" style="width: 100%">--}}
+                <img src="/assets/images/main/baner.png" style="width: 100%">
                 <div style="position: absolute; top: 10%">
                     <h3>بهترین بازیگران و فیلم‌های سال کدامند؟</h3>
                     <small style="display: block; ">هفتاد و پنجمین جوایز گلدن‌گلوب</small>
