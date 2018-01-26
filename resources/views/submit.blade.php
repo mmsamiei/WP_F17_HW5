@@ -5,7 +5,8 @@
     <title> submit </title>
 </head>
 <body>
-    <form>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
         <label for="title"> title </label>
         <input type="text" name="title" id="title">
         <br>
@@ -13,13 +14,13 @@
         <input type="text" name="original_title" id="original_title">
         <br>
         <label for="rate"> rate </label>
-        <input type="text" name="rate" id="rate">
+        <input type="number" name="rate" id="rate">
         <br>
         <label for="year"> year </label>
-        <input type="text" name="year" id="year">
+        <input type="number" name="year" id="year">
         <br>
         <label for="length"> length </label>
-        <input type="text" name="length" id="length">
+        <input type="number" name="length" id="length">
         <br>
         <label for="language"> language </label>
         <input type="text" name="language" id="language">
@@ -29,6 +30,9 @@
         <br>
         <label for="description"> description </label>
         <input type="text" name="description" id="description">
+        <br>
+        <label for="director"> director </label>
+        <input type="text" name="director" id="director">
         <br>
         <label for="writer"> writer </label>
         <input type="text" name="writer" id="writer">
@@ -42,6 +46,7 @@
         <label for="cover"> cover </label>
         <input type="file" name="cover" id="cover">
         <br>
+        <button class= "btn btn-success float-xl-left mt-2">ثبت</button>
     </form>
 </body>
 </html>
