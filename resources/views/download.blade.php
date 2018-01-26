@@ -679,7 +679,7 @@
                     <span class=""><i style="font-size: 24px" class="fa fa-check-square" aria-hidden="true"></i></span>
                 </div>
                 <div class="m-2">
-                    این فیلم روایتی تلخ از زندگی همه ماست که روزی پی می بریم چقدر تلخ هستیم
+                    این صرفا یک نظر نمونه به عنوان یک نظر مثبت است که در تمامی صفحات تکرار شده است
                 </div>
                 <div class="m-2">
                     <span class="m-1"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
@@ -753,7 +753,7 @@
                     <span class=""><i class="fa fa-times" aria-hidden="true"></i></span>
                 </div>
                 <div class="m-2">
-                    طوری نکنید که طوری شود که ملت طوری فکرکنند که گویی طوری شده است.
+                    این صرفا یک نظر نمونه به عنوان یک نظر منفی است که در تمامی صفحات تکرار شده است
                 </div>
                 <div class="m-2">
                     <span class="m-1"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
